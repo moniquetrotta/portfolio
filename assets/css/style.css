@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+body {
+  background-color: var(--primaryColor);
+}
+/* header {
+  display: flex;
+} */
+/* -       HEADER           -*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--primaryColor);
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.logo {
+  padding: 15px;
+}
+.nameTitle {
+  color: var(--secondaryColor);
+}
+.menu a {
+  padding: 10px;
+  margin: 5px;
+}
+.social {
+  display: flex;
+}
+.social a {
+  padding: 10px;
+  margin: 5px;
+}
+/* -       SOBRE           -*/
+main {
+  display: flex;
+  flex-direction: row;
+  /* text-align: center; */
+  justify-content: space-around;
+  align-items: center;
+  background: var(--primaryColor);
+  /* width: 100vw; */
+  height: 60vh;
+  /* border: 1px solid red; */
+}
+main p {
+  color: var(--white);
+  margin-bottom: 30px;
+}
+.titleDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+h1 {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 5px;
+  font-size: 4rem;
+  color: var(--secondaryColor);
+}
+.homeButtons {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 5px 10px 0;
+}
+.homeButton {
+  padding: 10px 35px;
+  border-radius: 4px;
+  border: 0;
+  margin-right: 16px;
+  background-image: var(--gradient2);
+}
+.homeImg {
+  margin: 50px;
+}
+/* -       PROJETOS           -*/
+#about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.perfil {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.perfil img {
+  max-width: 200px;
+  border-radius: 190px;
+}
+.perfil p {
+  margin: 10px 20px 10px 0;
+}
+.curso span:first-of-type {
+  color: var(--secondaryColor);
+  font-weight: bold;
+}
+.curso span:nth-of-type(2) {
+  font-size: 12px;
+}
+.cursosList {
+  display: flex;
+  flex-direction: column;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--primaryColor);
+  height: 100vh;
+  border: 1px solid red;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+section #project {
+  max-width: 600px;
+}
+section p {
+  margin-bottom: 20px;
+}
+.stacks {
+  display: flex;
+  flex-direction: row;
+}
+.stacks li {
+  padding: 25px;
+}
+.titleDiv {
+  text-align: center;
+  padding: 20px 0 20px 0;
+  color: var(--secondaryColor);
+  background-color: var(--primaryColor);
+}
+.titleDiv h2 {
+  font-size: 40px;
+}
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: space-around;
+}
+.projectCard {
+  /* border: 1px solid red; */
+  margin: 10px;
+  border-radius: 8px;
+  background: var(--sombra);
+  padding: 0 0 30px 0;
+}
+.projectCard img {
+  border-radius: 8px;
+  max-width: 300px;
+}
+.projectTitle {
+  margin: 8px;
+}
+.projectDescription {
+  margin: 8px;
+}
+.buttonCard {
+  margin: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 100px;
+}
+.buttonCard button {
+  padding: 9px 51px;
+  background-image: var(--gradient1);
+  border: none;
+  border-radius: 8px;
+}
+.projectStacks {
+  display: flex;
+  padding: 2px 0 5px 0;
+  margin: auto;
+}
+.projectStacks li {
+  display: flex;
+  align-items: center;
+  padding: 0 2px 0 2px;
+  font-size: 12px;
+  color: var(--laranja);
+}
+.curso {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  max-width: 430px;
+  margin: 5px 10px;
+}
+
+/* -       FOOTER           -*/
+.icone--text {
+  width: 24px;
+  margin: 0 8px;
+  animation: pulsar 1s infinite alternate;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
